@@ -1,0 +1,83 @@
+html{
+        background: url(http://alleghenyuu.org/wp/wp-content/uploads/2012/12/candle_iStock_800x320l.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+body{
+        color: red;
+        margin: 0 auto;
+        width: 60%;
+}
+h1{
+  text-align: center;
+  font-size: 300%;
+}
+audio{
+    display: none;
+}
+#container{
+        margin: 0 auto;
+        width: 80%;
+}
+.spooky {
+    font-family: 'Lobster', cursive;/*custom font*/
+}
+
+#container div{
+        padding-bottom: 5px;
+}
+table,td,th{
+        border: 1px solid #95b0db;
+        border-collapse: collapse;
+}
+thead{
+        color: rgba(147, 13, 13,0.9);
+}
+td,th{
+        width:30%;
+        text-align: center;
+}
+tr td:nth-child(3),#date{
+        width:10%;
+}
+tr .left{
+        font-size: 90%;
+        text-align: left;
+}
+footer{
+        padding-top: 2cm;
+		font-size: 150%;
+}
+#container table img{
+        width:100%;
+}
+.right {
+        text-align:right;
+}
+#forward {
+        width:20%;
+        position: relative;
+        animation-name: forwardGhost;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+#backward {
+        width:20%; position: relative;
+        animation-name: backwardGhost;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+@keyframes forwardGhost {
+    0%   {left:0}
+    50%  {left:100%}
+    100% {left:0}
+}
+@keyframes backwardGhost {
+    0%   {left:100%}
+    50%  {left:0}
+    100% {left:100%}
+}
+
